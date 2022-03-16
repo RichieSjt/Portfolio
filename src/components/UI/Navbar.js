@@ -1,8 +1,11 @@
 import React from 'react'
+import * as styles from '../../styles/UI/navbar.module.scss'
+
+import Button from './Button'
 
 const Navbar = () => {
     return (
-      <ul>
+      <ul className={styles.navbar}>
         <li>
           <a href="#">About</a>
         </li>
@@ -13,7 +16,7 @@ const Navbar = () => {
           <a href="#">Contact</a>
         </li>
         <li>
-          <a href="#">Resume</a>
+          <Button link='/resume.pdf'>Resume</Button>
         </li>
       </ul>
     )

@@ -1,12 +1,13 @@
 import * as React from 'react'
-import '../styles/global/styles.global.scss'
+import '../styles/styles.global.scss'
 
-import Layout from '../components/layout'
+import Layout from '../components/UI/layout'
+import About from '../components/Sections/About'
 // import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <h1>About me</h1>
+    <About />
   </Layout>
 )
 

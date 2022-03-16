@@ -1,0 +1,12 @@
+@import '../config';
+
+.navbar {
+    @extend .center-h;
+    justify-content: space-around;
+    height: 70px;
+
+    a {
+       text-decoration: none;
+       color: $white-main;
+    }
+}

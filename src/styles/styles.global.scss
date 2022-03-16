@@ -1,0 +1,9 @@
+@import 'base/fonts';
+@import 'base/reset';
+@import 'config';
+
+body {
+    background-color: $dominant;
+    font-family: $cabin;
+    color: $white-main;
+}
