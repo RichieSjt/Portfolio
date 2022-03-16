@@ -1,0 +1,48 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin backgroundCover {
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+@mixin imageScreenCover($view-height) {
+    height: $view-height ;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+@mixin grow($grow-factor){
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+        transform: scale($grow-factor);
+    }
+}
+
+@mixin opacity($value){
+    &:hover {
+        opacity: $value;
+    }
+}
+
+.center{
+    @include flexCenter(column);
+}
+
+.center-h{
+    @include flexCenter(row);
+}

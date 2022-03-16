@@ -1,4 +1,5 @@
 import * as React from 'react'
+import '../styles/global/styles.global.scss'
 
 import Layout from '../components/layout'
 // import Seo from "../components/seo"

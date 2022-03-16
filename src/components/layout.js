@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <h1>{data.site.siteMetadata?.title || `Title`}</h1>
+      <p>Site title {data.site.siteMetadata?.title || `Title`}</p>
       <div>
         <main>{children}</main>
         <footer></footer>
