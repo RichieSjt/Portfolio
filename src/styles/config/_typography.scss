@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+$cabin: 'Cabin', serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+.ubuntu-title {
+    font-family: $ubuntu;
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+.ubuntu-subtitle {
+    font-family: $ubuntu;
+    font-size: 2.5rem;
+}
+
+.ubuntu-lead {
+    font-family: $ubuntu;
+    font-size: 1.43rem;
+    color: $white-secondary;
+}
+
+.cabin-accent {
+    font-family: $cabin;
+    font-size: 1.25rem;
+    color: $accent;
+    letter-spacing: 0.12em;
+}
+
+.cabin-accent-small {
+    font-family: $cabin;
+    font-size: 0.875rem;
+}
+
+.cabin-paragraph {
+    font-family: $cabin;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+}

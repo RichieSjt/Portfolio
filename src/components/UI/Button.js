@@ -1,14 +1,15 @@
 import React from 'react'
-
 import * as styles from '../../styles/UI/button_primary.module.scss'
+
+import { Link } from 'gatsby'
 
 const Button = props => {
   const { link, children } = props
 
   return (
-    <a href={link} className={styles.buttonPrimary}>
+    <Link to={link} className={styles.buttonPrimary}>
       {children}
-    </a>
+    </Link>
   )
 }
 

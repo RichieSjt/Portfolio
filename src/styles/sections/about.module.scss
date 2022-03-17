@@ -1,0 +1,25 @@
+@import '../config';
+
+.about {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 7rem;
+
+    .intro {
+        @extend .cabin-accent;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 {
+        @extend .ubuntu-title;
+        margin-bottom: 1.75rem;
+    }
+
+    .description {
+        @extend .ubuntu-lead;
+        margin-bottom: 3.125rem;
+        max-width: 650px;
+    }
+}

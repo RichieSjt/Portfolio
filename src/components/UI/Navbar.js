@@ -1,22 +1,23 @@
 import React from 'react'
 import * as styles from '../../styles/UI/navbar.module.scss'
 
+import { Link } from 'gatsby'
 import Button from './Button'
 
 const Navbar = () => {
     return (
       <ul className={styles.navbar}>
         <li>
-          <a href="#">About</a>
+          <Link to="/#about">About</Link>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <Link to="/#projects">Projects</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="/#contact">Contact</Link>
         </li>
         <li>
-          <Button link='/resume.pdf'>Resume</Button>
+          <Button link="/resume.pdf">Resume</Button>
         </li>
       </ul>
     )

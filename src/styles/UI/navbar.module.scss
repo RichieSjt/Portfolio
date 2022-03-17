@@ -6,7 +6,12 @@
     height: 70px;
 
     a {
-       text-decoration: none;
-       color: $white-main;
+        @extend .cabin-paragraph;
+        @extend .center;
+        color: $white-main;
+        text-decoration: none;
+        border-bottom: 1px solid $white-main;
+        height: 40px;
     }
+
 }
