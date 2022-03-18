@@ -1,12 +1,13 @@
 import React from 'react'
-import * as styles from '../../styles/UI/navbar.module.scss'
+import { navbar, navlinks, right } from '../../styles/UI/navbar.module.scss'
 
 import { Link } from 'gatsby'
 import Button from './Button'
 
 const Navbar = () => {
-    return (
-      <ul className={styles.navbar}>
+  return (
+    <nav className={navbar}>
+      <ul className={navlinks}>
         <li>
           <Link to="/#about">About</Link>
         </li>
@@ -16,11 +17,10 @@ const Navbar = () => {
         <li>
           <Link to="/#contact">Contact</Link>
         </li>
-        <li>
-          <Button link="/resume.pdf">Resume</Button>
-        </li>
       </ul>
-    )
+      <Button link="/resume.pdf">Resume</Button>
+    </nav>
+  )
 }
 
 export default Navbar

@@ -2,9 +2,23 @@
 
 .navbar {
     @extend .center-h;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 70px;
+    gap: 1.5rem;
 
+    .right {
+        margin-left: auto;
+    }
+
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    
     a {
         @extend .cabin-paragraph;
         @extend .center;
@@ -13,5 +27,4 @@
         border-bottom: 1px solid $white-main;
         height: 40px;
     }
-
 }
