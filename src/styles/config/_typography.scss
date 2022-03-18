@@ -16,7 +16,7 @@ $ubuntu: 'Ubuntu', sans-serif;
 
 .ubuntu-lead {
     font-family: $ubuntu;
-    font-size: 1.43rem;
+    font-size: 1.406rem;
     color: $white-secondary;
 }
 
@@ -28,12 +28,18 @@ $ubuntu: 'Ubuntu', sans-serif;
 }
 
 .cabin-accent-small {
-    font-family: $cabin;
+    @extend .cabin-accent;
     font-size: 0.875rem;
 }
 
 .cabin-paragraph {
     font-family: $cabin;
     font-size: 1rem;
+    letter-spacing: 0.12em;
+}
+
+.cabin-paragraph-medium {
+    font-family: $cabin;
+    font-size: 1.125rem;
     letter-spacing: 0.12em;
 }

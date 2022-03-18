@@ -1,0 +1,17 @@
+@import './config';
+
+.accent {
+    @extend .cabin-accent-small;
+    margin-bottom: 5px;
+}
+.title {
+    @extend .ubuntu-lead;
+    color: $white-main;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}

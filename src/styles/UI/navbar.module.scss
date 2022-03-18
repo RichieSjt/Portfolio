@@ -5,26 +5,23 @@
     justify-content: space-between;
     height: 70px;
     gap: 1.5rem;
-
-    .right {
-        margin-left: auto;
-    }
-
 }
 
 .navlinks {
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     justify-content: space-between;
-    max-width: 400px;
+    max-width: 40%;
     width: 100%;
+    gap: 1rem;
     
     a {
         @extend .cabin-paragraph;
         @extend .center;
         color: $white-main;
         text-decoration: none;
-        border-bottom: 1px solid $white-main;
         height: 40px;
+    }
+    a.active {
+        border-bottom: 1px solid $white-main;
     }
 }

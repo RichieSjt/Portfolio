@@ -6,12 +6,6 @@
     flex-direction: $direction;
 }
 
-
-@mixin flex($direction) {
-    display: flex;
-    flex-direction: $direction;
-}
-
 @mixin backgroundCover {
     background-repeat: no-repeat;
     background-position: center;
@@ -37,6 +31,16 @@
     &:hover {
         opacity: $value;
     }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .center{

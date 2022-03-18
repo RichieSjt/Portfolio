@@ -1,10 +1,12 @@
 import React from 'react'
-import { navbar, navlinks, right } from '../../styles/UI/navbar.module.scss'
+import { navbar, navlinks, active } from '../../styles/UI/navbar.module.scss'
 
 import { Link } from 'gatsby'
 import Button from './Button'
 
 const Navbar = () => {
+  console.log(active)
+
   return (
     <nav className={navbar}>
       <ul className={navlinks}>
