@@ -3,7 +3,7 @@
 .contact-section {
     @extend .center;
     min-height: calc(100vh - 70px);
-    
+
     h1 {
         @extend .ubuntu-title;
         margin-bottom: 3.625rem;
@@ -28,8 +28,8 @@
         gap: 3rem;
         width: 100%;
         fill: $white-main;
-        
-        svg{
+
+        svg {
             width: 40px;
         }
     }

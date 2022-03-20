@@ -5,9 +5,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba( 50, 50, 50, 0.8);
+    background: rgba(50, 50, 50, 0.8);
     backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -26,7 +26,7 @@
     max-width: 40%;
     width: 100%;
     gap: 1rem;
-    
+
     a {
         @extend .cabin-paragraph-medium;
         @extend .center;

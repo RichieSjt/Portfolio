@@ -13,21 +13,21 @@
 }
 
 @mixin imageScreenCover($view-height) {
-    height: $view-height ;
+    height: $view-height;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
 }
 
-@mixin grow($grow-factor){
-    transition: all .2s ease-in-out;
-    
+@mixin grow($grow-factor) {
+    transition: all 0.2s ease-in-out;
+
     &:hover {
         transform: scale($grow-factor);
     }
 }
 
-@mixin opacity($value){
+@mixin opacity($value) {
     &:hover {
         opacity: $value;
     }
@@ -43,10 +43,10 @@
     flex-direction: column;
 }
 
-.center{
+.center {
     @include flexCenter(column);
 }
 
-.center-h{
+.center-h {
     @include flexCenter(row);
 }

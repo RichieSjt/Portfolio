@@ -30,9 +30,7 @@ const ProjectCard = ({ details }) => {
                         <div className={styles.buttonsContainer}>{buttons}</div>
                     </div>
                     <div>
-                        <div className={styles.tagsContainer}>
-                            {tags}
-                        </div>
+                        <div className={styles.tagsContainer}>{tags}</div>
                         <span className={styles.description}>
                             {description}
                         </span>

@@ -1,6 +1,7 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import { buttonPrimary, buttonPrimaryLarge } from '../../styles/UI/button_primary.module.scss'
+
+import { Link } from 'gatsby'
 
 const Button = props => {
     const { link, large = false, newTab = false, children } = props

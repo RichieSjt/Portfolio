@@ -20,8 +20,8 @@
 }
 
 //Variable
-@mixin responsive($minWidth, $maxWidth){
-    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth){
+@mixin responsive($minWidth, $maxWidth) {
+    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
         @content;
     }
 }
