@@ -28,7 +28,7 @@ const Projects = () => {
     }
 
     return (
-        <section className={projectsSection}>
+        <section className={projectsSection} id='projects'>
             <ProjectCard details={filmateDetails} />
             <ProjectCard details={portfolioDetails} />
         </section>

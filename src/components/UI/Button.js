@@ -1,15 +1,24 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import { buttonPrimary, buttonPrimaryLarge } from '../../styles/UI/button_primary.module.scss'
 
 const Button = props => {
-    const { link, large = false, children } = props
+    const { link, large = false, newTab = false, children } = props
             
-    let classes = `${buttonPrimary} ${large ? buttonPrimaryLarge : ''}`
-
+    const classes = `${buttonPrimary} ${large ? buttonPrimaryLarge : ''}`
+    
+    if(newTab) {
+        return (
+            <a href={link} className={classes} target="_blank" rel="noreferrer">
+                {children}
+            </a>
+        )
+    }
+    
     return (
-        <a href={link} className={classes} target="_blank" rel="noreferrer">
+        <Link to={link} className={classes}>
             {children}
-        </a>
+        </Link>
     )
 }
 

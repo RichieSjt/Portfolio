@@ -9,7 +9,7 @@ const About = () => {
         <p className={intro}>Hi there! My name is</p>
         <h1>Ricardo Juárez</h1>
         <h2 className={description}>
-          I'm a Software Engineeer with a passion for web applications
+          I'm a Software Engineeer with a passion for Web Applications
           development.
         </h2>
         <Button link='/#projects' large={true} >Checkout my Projects!</Button>

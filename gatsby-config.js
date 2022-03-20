@@ -1,7 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `Portfolio`,
-        description: `My personal website.`,
+        title: `Ricardo Juárez`,
+        titleTemplate: '%s · Ricardo Juárez',
+        description: `Software engineer with a passion for Web Applications development`,
         author: `RichieSjt`,
         siteUrl: `https://richiesjt.github.io`,
     },
@@ -20,7 +21,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Portfolio`,
+                name: `Ricardo Juárez`,
                 start_url: `/`,
                 background_color: `#323232`,
                 display: `minimal-ui`,

@@ -5,14 +5,15 @@ import Layout from '../components/UI/Layout'
 import About from '../components/Sections/About'
 import Projects from '../components/Sections/Projects'
 import Contact from '../components/Sections/Contact'
-// import Seo from "../components/seo"
+import Seo from "../components/Utils/Seo"
 
 const IndexPage = () => (
-  <Layout>
-    <About />
-    <Projects />
-    <Contact />
-  </Layout>
+    <Layout>
+        <Seo title="Home" lang="en" />
+        <About />
+        <Projects />
+        <Contact />
+    </Layout>
 )
 
 export default IndexPage

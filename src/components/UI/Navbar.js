@@ -19,7 +19,9 @@ const Navbar = () => {
                         <Link to="/#contact">Contact</Link>
                     </li>
                 </ul>
-                <Button link="/resume.pdf">Resume</Button>
+                <Button link="/resume.pdf" newTab={true}>
+                    Resume
+                </Button>
             </nav>
         </header>
     )
