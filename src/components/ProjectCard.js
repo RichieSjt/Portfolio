@@ -3,11 +3,12 @@ import * as styles from '../styles/project.module.scss'
 import ButtonIcon from './UI/ButtonIcon'
 
 import CardPrimary from './UI/CardPrimary'
+import Tag from './UI/Tag'
 
-const Project = ({ details }) => {
+const ProjectCard = ({ details }) => {
     const { techStack, title, description, refers } = details
 
-    const stack = techStack.map(techName => <p>{techName}</p>)
+    const tags = techStack.map(techName => <Tag>{techName}</Tag>)
 
     const buttons = Object.keys(refers).map(key => {
         const link = refers[key]
@@ -25,11 +26,13 @@ const Project = ({ details }) => {
             <CardPrimary>
                 <div className={styles.projectGrid}>
                     <div>
-                        <p>Image</p>
+                        <p className={styles.image}>Image</p>
                         <div className={styles.buttonsContainer}>{buttons}</div>
                     </div>
                     <div>
-                        {stack}
+                        <div className={styles.tagsContainer}>
+                            {tags}
+                        </div>
                         <span className={styles.description}>
                             {description}
                         </span>
@@ -40,4 +43,4 @@ const Project = ({ details }) => {
     )
 }
 
-export default Project
+export default ProjectCard

@@ -1,5 +1,5 @@
 import React from 'react'
-import { header, navbar, navlinks, active } from '../../styles/UI/navbar.module.scss'
+import { header, navbar, navlinks } from '../../styles/UI/navbar.module.scss'
 
 import { Link } from 'gatsby'
 import Button from './Button'

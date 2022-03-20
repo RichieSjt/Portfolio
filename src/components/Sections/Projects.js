@@ -1,7 +1,7 @@
 import React from 'react'
 import { projectsContainer } from '../../styles/sections/projects.module.scss'
 
-import Project from '../Project'
+import ProjectCard from '../ProjectCard'
 
 const Projects = () => {
     const filmateDetails = {
@@ -30,8 +30,8 @@ const Projects = () => {
 
     return (
         <section className={projectsContainer}>
-            <Project details={filmateDetails} />
-            <Project details={portfolioDetails} />
+            <ProjectCard details={filmateDetails} />
+            <ProjectCard details={portfolioDetails} />
         </section>
     )
 }

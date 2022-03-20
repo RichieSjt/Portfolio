@@ -1,0 +1,12 @@
+@import '../config';
+
+.tag {
+    @extend .center;
+    @extend .cabin-paragraph;
+    font-size: 14px;
+    border: 2px solid #676767;
+    border-radius: 4px;
+    height: 30px;
+    padding: 10px;
+    max-width: fit-content;
+}
