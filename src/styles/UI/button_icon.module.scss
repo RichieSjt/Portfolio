@@ -1,0 +1,19 @@
+@import '../config';
+@import './button';
+
+.button-icon {
+    @extend %button;
+    padding: 10px 0 10px 10px;
+    background-color: $secondary;
+    border-radius: 4px;
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.25);
+
+    svg {
+        width: 40px;
+        height: 100%;
+    }
+
+    .white-icon {
+        fill: $white-main;
+    }
+}

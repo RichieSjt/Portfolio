@@ -12,7 +12,7 @@ const About = () => {
           I'm a Software Engineeer who specializes in web applications
           development.
         </h2>
-        <Button link='/#projects' large={true}>Checkout my Projects!</Button>
+        <Button link='/#projects' large={true} >Checkout my Projects!</Button>
       </section>
     )
 }

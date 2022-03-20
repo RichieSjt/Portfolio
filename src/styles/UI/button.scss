@@ -1,0 +1,9 @@
+%button {
+    @extend .cabin-paragraph;
+    @extend .center-h;
+    color: $white-main;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 40px;
+    max-width: fit-content;
+}

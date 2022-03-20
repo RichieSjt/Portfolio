@@ -4,17 +4,13 @@ import Navbar from './Navbar'
 import * as styles from '../../styles/UI/layout.module.scss'
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <div>
-        <main className={styles.content}>
+    return (
+        <>
             <Navbar />
-            {children}
-        </main>
-        <footer></footer>
-      </div>
-    </>
-  )
+            <main className={styles.content}>{children}</main>
+            <footer></footer>
+        </>
+    )
 }
 
 export default Layout

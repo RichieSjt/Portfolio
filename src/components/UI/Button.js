@@ -1,16 +1,16 @@
 import React from 'react'
-import { buttonPrimary, buttonLarge} from '../../styles/UI/button_primary.module.scss'
+import { buttonPrimary, buttonPrimaryLarge } from '../../styles/UI/button_primary.module.scss'
 
 const Button = props => {
-  const { link, children, large = false } = props
+    const { link, large = false, children } = props
+            
+    let classes = `${buttonPrimary} ${large ? buttonPrimaryLarge : ''}`
 
-  const classes = `${buttonPrimary} ${large ? buttonLarge : ''}`
-
-  return (
-    <a href={link} target="_blank" rel="noreferrer" className={classes}>
-      {children}
-    </a>
-  )
+    return (
+        <a href={link} className={classes} target="_blank" rel="noreferrer">
+            {children}
+        </a>
+    )
 }
 
 export default Button

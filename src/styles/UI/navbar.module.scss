@@ -1,9 +1,22 @@
 @import '../config';
 
+.header {
+    @extend .center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba( 50, 50, 50, 0.8);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur( 10px );
+}
+
 .navbar {
     @extend .center-h;
     justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
     height: 70px;
+    padding: 1rem 2rem;
     gap: 1.5rem;
 }
 
