@@ -28,7 +28,7 @@
     gap: 1rem;
     
     a {
-        @extend .cabin-paragraph;
+        @extend .cabin-paragraph-medium;
         @extend .center;
         color: $white-main;
         text-decoration: none;

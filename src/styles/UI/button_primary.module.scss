@@ -2,7 +2,8 @@
 @import './button';
 
 .button-primary {
-   @extend %button;
+    @extend %button;
+    @extend .cabin-paragraph-medium;
     background-color: $accent;
     padding: 10px 20px;
 }

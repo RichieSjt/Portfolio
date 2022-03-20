@@ -22,7 +22,6 @@ const Projects = () => {
             'My personal website where I show about me, my projects and resume. Built and designed from scratch.',
         techStack: ['Gatsby', 'React', 'SASS', 'UI/UX'],
         refers: {
-            demo: 'demolink.com',
             code: 'codelink.com',
             prototype: 'prototypelink.com',
         },

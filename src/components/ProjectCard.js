@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from '../styles/project.module.scss'
+import * as styles from '../styles/projectCard.module.scss'
 import ButtonIcon from './UI/ButtonIcon'
 
 import CardPrimary from './UI/CardPrimary'
@@ -20,7 +20,7 @@ const ProjectCard = ({ details }) => {
     })
 
     return (
-        <div>
+        <div className={styles.projectCard}>
             <p className={styles.accent}>Project</p>
             <h3 className={styles.title}>{title}</h3>
             <CardPrimary>

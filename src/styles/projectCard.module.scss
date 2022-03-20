@@ -1,0 +1,42 @@
+@import './config';
+
+.accent {
+    @extend .cabin-accent-small;
+    margin-bottom: 5px;
+}
+.title {
+    @extend .ubuntu-lead;
+    color: $white-main;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    height: fit-content;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.7rem), 1fr));
+    gap: 0.5rem;
+
+    .image {
+        margin-bottom: 1rem;
+    }
+
+    .buttons-container {
+        @extend .flex-row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tags-container {
+        @extend .flex-row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        @extend .cabin-paragraph;
+    }
+}
