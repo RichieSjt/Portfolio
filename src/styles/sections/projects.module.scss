@@ -1,9 +1,9 @@
 @import '../config';
 
-.projects-container {
+.projects-section {
     display: grid;
     gap: 2rem;
-    margin-bottom: 8rem;
+    padding-bottom: 7rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
 }
 
