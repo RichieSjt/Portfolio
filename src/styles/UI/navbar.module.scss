@@ -52,6 +52,7 @@ input[type='checkbox'] {
         @extend .cabin-paragraph-medium;
         position: relative;
         text-decoration: none;
+        cursor: pointer;
         padding: 10px;
 
         &::after {
