@@ -5,19 +5,21 @@ $ubuntu: 'Ubuntu', sans-serif;
 
 .ubuntu-title {
     font-family: $ubuntu;
-    font-size: 3.75rem;
     font-weight: bold;
+    font-size: 3.75rem;
+    font-size: clamp(3rem, 2.2738095238095237rem + 2.380952380952381vw, 3.75rem);
+}
+
+.ubuntu-lead {
+    font-family: $ubuntu;
+    color: $white-secondary;
+    font-size: 1.406rem;
+    font-size: clamp(1.2rem, 0.8066666666666668rem + 0.9666666666666663vw, 1.406rem);
 }
 
 .ubuntu-subtitle {
     font-family: $ubuntu;
     font-size: 2.5rem;
-}
-
-.ubuntu-lead {
-    font-family: $ubuntu;
-    font-size: 1.406rem;
-    color: $white-secondary;
 }
 
 .cabin-accent {
