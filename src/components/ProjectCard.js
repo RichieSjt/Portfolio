@@ -5,16 +5,17 @@ import ButtonIcon from './UI/ButtonIcon'
 import CardPrimary from './UI/CardPrimary'
 import Tag from './UI/Tag'
 
-const ProjectCard = ({ details }) => {
-    const { techStack, title, description, refers } = details
+const ProjectCard = ({ content }) => {
+    const { frontmatter, html: description } = content
+    const { title, techStack, links } = frontmatter
 
     const tags = techStack.map(techName => <Tag>{techName}</Tag>)
 
-    const buttons = Object.keys(refers).map(key => {
-        const link = refers[key]
+    const buttons = links.map(data => {
+        const [iconType, link] = data.split(' ')
         return (
-            <ButtonIcon link={link} type={key}>
-                {key}
+            <ButtonIcon link={link} icon={iconType}>
+                {iconType}
             </ButtonIcon>
         )
     })
@@ -31,9 +32,10 @@ const ProjectCard = ({ details }) => {
                     </div>
                     <div>
                         <div className={styles.tagsContainer}>{tags}</div>
-                        <span className={styles.description}>
-                            {description}
-                        </span>
+                        <span
+                            className={styles.description}
+                            dangerouslySetInnerHTML={{ __html: description }}
+                        />
                     </div>
                 </div>
             </CardPrimary>

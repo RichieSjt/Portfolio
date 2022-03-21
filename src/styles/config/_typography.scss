@@ -38,6 +38,12 @@ $ubuntu: 'Ubuntu', sans-serif;
     letter-spacing: 0.12em;
 }
 
+.cabin-paragraph-small {
+    font-family: $cabin;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
 .cabin-paragraph-medium {
     font-family: $cabin;
     font-size: 1rem;

@@ -6,19 +6,19 @@ import CodeIcon from '../../icons/code-icon.svg'
 import FigmaIcon from '../../icons/figma-icon.svg'
 
 const ButtonIcon = props => {
-    const { link, children, type } = props
+    const { link, children, icon } = props
 
-    let icon
+    let selectedIcon
 
-    switch (type) {
+    switch (icon) {
         case 'demo':
-            icon = <DemoIcon className={whiteIcon} />
+            selectedIcon = <DemoIcon className={whiteIcon} />
             break
         case 'code':
-            icon = <CodeIcon className={whiteIcon} />
+            selectedIcon = <CodeIcon className={whiteIcon} />
             break
         case 'prototype':
-            icon = <FigmaIcon />
+            selectedIcon = <FigmaIcon />
             break
         default:
             break
@@ -27,7 +27,7 @@ const ButtonIcon = props => {
     return (
         <a href={link} className={buttonIcon} target="_blank" rel="noreferrer">
             {children}
-            {icon}
+            {selectedIcon}
         </a>
     )
 }

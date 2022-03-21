@@ -7,6 +7,7 @@ module.exports = {
         siteUrl: `https://richiesjt.github.io`,
     },
     plugins: [
+        `gatsby-transformer-remark`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         {
@@ -42,6 +43,20 @@ module.exports = {
                 rule: {
                     include: /icons/,
                 },
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'content',
+                path: `${__dirname}/content/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `projects`,
+                path: `${__dirname}/content/projects`,
             },
         },
     ],

@@ -2,11 +2,10 @@
 
 .tag {
     @extend .center;
-    @extend .cabin-paragraph;
-    font-size: 14px;
+    @extend .cabin-paragraph-small;
     border: 2px solid #676767;
     border-radius: 4px;
-    height: 30px;
-    padding: 10px;
+    height: 24px;
+    padding: 8px;
     max-width: fit-content;
 }
