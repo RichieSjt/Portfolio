@@ -1,6 +1,17 @@
 @import '../config';
 
 .projects-section {
+    h1 {
+        @extend .ubuntu-subtitle;
+        margin-bottom: 1.75rem;
+    }
+    h2 {
+        @extend .ubuntu-lead;
+        margin-bottom: 4rem;
+    }
+}
+
+.projects-container {
     display: grid;
     gap: 2rem;
     padding-bottom: 7rem;

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
-import { projectsSection } from '../../styles/sections/projects.module.scss'
+import { projectsSection, projectsContainer } from '../../styles/sections/projects.module.scss'
 
 import ProjectCard from '../ProjectCard'
 
@@ -28,7 +28,11 @@ const Projects = () => {
 
     return (
         <section className={projectsSection} id="projects">
-            {projects}
+            <h1>Projects</h1>
+            <h2>Here are some of the projects I've made.</h2>
+            <div className={projectsContainer}>
+                {projects}
+            </div>
         </section>
     )
 }
