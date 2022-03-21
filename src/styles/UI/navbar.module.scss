@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(50, 50, 50, 0.8);
+    background: $dominant-transparent;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -13,11 +13,32 @@
 .navbar {
     @extend .center-h;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: $main-container-width;
     width: 100%;
     height: 70px;
     padding: 1rem 2rem;
     gap: 1.5rem;
+}
+
+input[type='checkbox'] {
+    display: none;
+
+    &:checked ~ .navlinks {
+        left: 0;
+    }
+}
+
+.menu-btn {
+    display: none;
+
+    svg {
+        fill: $white-main;
+        cursor: pointer;
+    }
+
+    @include responsiveMobile() {
+        display: block;
+    }
 }
 
 .navlinks {
@@ -36,5 +57,17 @@
     }
     a.active {
         border-bottom: 1px solid $white-main;
+    }
+
+    @include responsiveMobile() {
+        display: block;
+        position: fixed;
+        top: $navbar-height;
+        left: -100%;
+        background: $dominant;
+        text-align: center;
+        transition: all 0.3s ease;
+        height: 100vh;
+        max-width: 100%;
     }
 }

@@ -1,7 +1,7 @@
 @import '../config';
 
 .content {
-    max-width: 1200px;
+    max-width: $main-container-width;
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;

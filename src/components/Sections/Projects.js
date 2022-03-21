@@ -23,13 +23,13 @@ const Projects = () => {
     const projectsNode = data.allMarkdownRemark.nodes
 
     const projects = projectsNode.map(project => (
-        <ProjectCard content={project} />
+        <ProjectCard content={project} key={project.frontmatter.title} />
     ))
 
     return (
         <section className={projectsSection} id="projects">
             <h1>Projects</h1>
-            <h2>Here are some of the projects I've made.</h2>
+            <h2>Here are some of the projects I've worked on.</h2>
             <div className={projectsContainer}>
                 {projects}
             </div>

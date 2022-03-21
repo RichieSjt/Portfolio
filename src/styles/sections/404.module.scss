@@ -2,7 +2,7 @@
 
 .not-found-section {
     @extend .center;
-    min-height: calc(100vh - 70px);
+    min-height: $height-minus-nav;
     padding-bottom: 6rem;
 }
 

@@ -2,7 +2,7 @@
 
 .contact-section {
     @extend .center;
-    min-height: calc(100vh - 70px);
+    min-height: $height-minus-nav;
 
     h1 {
         @extend .ubuntu-title;

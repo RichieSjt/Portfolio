@@ -1,7 +1,7 @@
 @import '../config';
 
 .about-section {
-    min-height: calc(100vh - 70px);
+    min-height: $height-minus-nav;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,7 +13,7 @@ const Contact = () => {
                 Wether you have a question or just want to say hi I'll get back
                 to you as soon as possible.
             </h2>
-            <Button link="mailto:richie_j20@outlook.com" large={true}>
+            <Button link="mailto:richie_j20@outlook.com" large={true} newTab={true}>
                 Contact me
             </Button>
             <div className={icons}>

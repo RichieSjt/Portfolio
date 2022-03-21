@@ -9,12 +9,12 @@ const ProjectCard = ({ content }) => {
     const { frontmatter, html: description } = content
     const { title, techStack, links } = frontmatter
 
-    const tags = techStack.map(techName => <Tag>{techName}</Tag>)
+    const tags = techStack.map(techName => <Tag key={techName}>{techName}</Tag>)
 
     const buttons = links.map(data => {
         const [iconType, link] = data.split(' ')
         return (
-            <ButtonIcon link={link} icon={iconType}>
+            <ButtonIcon link={link} icon={iconType} key={iconType}>
                 {iconType}
             </ButtonIcon>
         )
