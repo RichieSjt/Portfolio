@@ -1,10 +1,13 @@
 @import 'base/reset';
 @import 'config';
 
+html {
+    scroll-padding-top: $navbar-height;
+}
+
 body {
     background-color: $dominant;
     font-family: $cabin;
     color: $white-main;
-    // Navbar space
-    margin-top: 70px;
+    margin-top: $navbar-height;
 }

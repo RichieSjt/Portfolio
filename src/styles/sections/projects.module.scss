@@ -1,6 +1,8 @@
 @import '../config';
 
 .projects-section {
+    padding-top: 1.75rem;
+    
     h1 {
         @extend .ubuntu-subtitle;
         margin-bottom: 1.75rem;
