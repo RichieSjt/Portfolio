@@ -50,14 +50,22 @@ input[type='checkbox'] {
 
     a {
         @extend .cabin-paragraph-medium;
-        @extend .center;
-        color: $white-main;
+        position: relative;
         text-decoration: none;
-        height: 40px;
+        padding: 10px;
 
-        &.active,
-        &:hover {
-            border-bottom: 1px solid $white-main;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $white-main;
+            transition: width 0.2s;
+        }
+        &.active::after, &:hover::after {
+            width: 100%;
         }
     }
 
@@ -68,7 +76,7 @@ input[type='checkbox'] {
         left: -100%;
         background: $dominant;
         text-align: center;
-        transition: all 0.3s ease;
+        transition: all 0.23s ease;
         height: 100vh;
         max-width: 60%;
     }

@@ -8,46 +8,52 @@ $ubuntu: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 3.75rem;
     font-size: clamp(3rem, 2.2738095238095237rem + 2.380952380952381vw, 3.75rem);
+    color: $white-main;
 }
 
 .ubuntu-lead {
     font-family: $ubuntu;
-    color: $white-secondary;
     font-size: 1.406rem;
     font-size: clamp(1.2rem, 0.8066666666666668rem + 0.9666666666666663vw, 1.406rem);
+    color: $white-secondary;
 }
 
 .ubuntu-subtitle {
     font-family: $ubuntu;
     font-size: 2.5rem;
+    color: $white-main;
 }
 
 .cabin-accent {
     font-family: $cabin;
     font-size: 1.25rem;
-    color: $accent;
     letter-spacing: 0.12em;
+    color: $accent;
 }
 
 .cabin-accent-small {
     @extend .cabin-accent;
     font-size: 0.875rem;
+    color: $accent;
 }
 
 .cabin-paragraph {
     font-family: $cabin;
     font-size: 0.875rem;
     letter-spacing: 0.12em;
+    color: $white-main;
 }
 
 .cabin-paragraph-small {
     font-family: $cabin;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
+    color: $white-main;
 }
 
 .cabin-paragraph-medium {
     font-family: $cabin;
     font-size: 1rem;
     letter-spacing: 0.12em;
+    color: $white-main;
 }

@@ -11,7 +11,7 @@ const NotFoundPage = () => (
         <section className={styles.notFoundSection}>
             <h1 className={styles.title}>Not Found</h1>
             <p className={styles.lead}>
-                Looks like the page you were searching for doesn&#39;t exist...
+                Looks like the page you were looking for doesn&#39;t exist...
                 the sadness.
             </p>
             <Button link="/" large={true}>
