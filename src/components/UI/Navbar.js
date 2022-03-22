@@ -1,13 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { header, navbar, navlinks, active, menuBtn } from '../../styles/UI/navbar.module.scss'
 
-import { Link, animateScroll as scroll} from 'react-scroll'
+import { Link, Events } from 'react-scroll'
 import Button from './Button'
 import MenuBtn from '../../icons/menu-icon.svg'
 
 const Navbar = () => {
-    const offset = -80
-    const duration = 600 
+    // Creating a scroll state to prevent adding active classes to nav links when scrolling
+    const [scrollState, setScrollState] = useState({
+        scrolling: false,
+        to: ''
+    })
+
+    Events.scrollEvent.register('begin', (to, element) => {
+        setScrollState({
+            scrolling: true,
+            to,
+        })
+    })
+
+    Events.scrollEvent.register('end', (to, element) => {
+        // Waiting for scroll to completely finish
+        setTimeout(()=> {
+            setScrollState({
+                scrolling: false,
+                to: '',
+            })
+        }, 50)
+    })
+
+    // Setting active class only when we are not scrolling
+    const activeClassCurrent = !scrollState.scrolling ? active : '';
+
+    // React scroll config
+    const scrollConfig = {
+        activeClass: activeClassCurrent,
+        spy: true,
+        smooth: true,
+        offset: -75,
+        duration: 600,
+    }
 
     return (
         <header className={header}>
@@ -20,11 +52,9 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="about"
-                            activeClass={active}
-                            spy={true}
-                            smooth={true}
-                            offset={offset}
-                            duration={duration}
+                            // Setting active class only if it is the item we are currently scrolling to
+                            className={scrollState.to === 'about' ? active : ''}
+                            {...scrollConfig}
                         >
                             About
                         </Link>
@@ -32,11 +62,8 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="projects"
-                            activeClass={active}
-                            spy={true}
-                            smooth={true}
-                            offset={offset}
-                            duration={duration}
+                            className={scrollState.to === 'projects' ? active : ''}
+                            {...scrollConfig}
                         >
                             Projects
                         </Link>
@@ -44,11 +71,8 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="contact"
-                            activeClass={active}
-                            spy={true}
-                            smooth={true}
-                            offset={offset}
-                            duration={duration}
+                            className={scrollState.to === 'contact' ? active : ''}
+                            {...scrollConfig}
                         >
                             Contact
                         </Link>

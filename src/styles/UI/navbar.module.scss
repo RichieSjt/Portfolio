@@ -7,7 +7,6 @@
     width: 100%;
     background: $dominant-transparent;
     backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -65,20 +64,25 @@ input[type='checkbox'] {
             background: $white-main;
             transition: width 0.2s;
         }
-        &.active::after, &:hover::after {
+        &.active::after,
+        &:hover::after {
             width: 100%;
         }
     }
 
     @include responsiveMobile() {
-        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 2rem 0;
         position: fixed;
         top: $navbar-height;
         left: -100%;
-        background: $dominant;
+        height: $height-minus-nav;
+        max-width: 60%;
         text-align: center;
         transition: all 0.23s ease;
-        height: 100vh;
-        max-width: 60%;
+        background: $dominant;
+        box-shadow: 4px 15px 20px -6px rgba(0,0,0,0.5);
     }
 }
