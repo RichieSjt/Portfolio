@@ -1,0 +1,72 @@
+@import '../config';
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #1515158a;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 2;
+    top: 10vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 1.75rem auto;
+    max-width: 700px;
+    height: fit-content;
+    animation: slide-down 300ms ease-out forwards;
+
+    @include responsive(0px, 700px) {
+        margin: 1.75rem 1rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem 2rem;
+
+        h1 {
+            @extend .ubuntu-lead;
+        }
+
+        .close-icon {
+            position: absolute;
+            fill: $white-secondary;
+            cursor: pointer;
+            top: 1.5rem;
+            right: 1.5rem;
+
+            &:hover {
+                fill: $white-main;
+            }
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+
+            :first-child {
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

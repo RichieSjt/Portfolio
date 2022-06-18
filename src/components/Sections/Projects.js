@@ -3,7 +3,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { projectsSection, projectsContainer } from '../../styles/sections/projects.module.scss'
 
-import ProjectCard from '../ProjectCard'
+import ProjectCard from '../Projects/ProjectItem'
 
 const Projects = () => {
     const data = useStaticQuery(graphql`

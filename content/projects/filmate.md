@@ -1,16 +1,14 @@
 ---
-title: 'Filmate Web App'
+title: 'Filmate V1'
 techStack: 
-    - React
-    - Express
     - Node
+    - Express
     - MongoDB
     - SASS
-    - UI/UX
 links:
-    - 'demo https://filmate-web.herokuapp.com/login'
-    - 'code https://github.com/RichieSjt/Filmate'
-    - 'prototype https://www.figma.com/file/oh7pkoh99zmrOXgWNoocxE/Portfolio?node-id=0%3A1'
+    - 'demo https://richiesjt.github.io/Filmate-node/index.html'
+    - 'code https://github.com/RichieSjt/Filmate-node'
+    - 'prototype https://www.figma.com/file/P4ioN9OsQYsRRbQhTGNZBU/FILMATE?node-id=0%3A1'
 ---
 
-Create and share movie playlists with your friends, want to see a movie? With filmate you can both select films and make a match!
+Get movie recommendations for you and your friends. Explore movies, create playlists, join events and more!

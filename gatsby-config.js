@@ -11,6 +11,13 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         {
+            resolve: `gatsby-plugin-portal`,
+            options: {
+                key: 'overlays',
+                id: 'overlays',
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,

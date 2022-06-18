@@ -1,13 +1,17 @@
-import React from 'react'
-import * as styles from '../styles/projectCard.module.scss'
-import ButtonIcon from './UI/ButtonIcon'
+import React, { useRef } from 'react'
+import * as styles from '../../styles/projectCard.module.scss'
+import ButtonIcon from '../UI/ButtonIcon'
 
-import CardPrimary from './UI/CardPrimary'
-import Tag from './UI/Tag'
+import CardPrimary from '../UI/CardPrimary'
+import Modal from '../UI/Modal'
+import Tag from '../UI/Tag'
+import ProjectModal from './ProjectModal'
 
 const ProjectCard = ({ content }) => {
     const { frontmatter, html: description } = content
     const { title, techStack, links } = frontmatter
+    
+    const modalRef = useRef()
 
     const tags = techStack.map(techName => <Tag key={techName}>{techName}</Tag>)
 
@@ -39,6 +43,14 @@ const ProjectCard = ({ content }) => {
                     </div>
                 </div>
             </CardPrimary>
+
+            <button onClick={() => modalRef.current.openModal()}>
+                Open modal
+            </button>
+
+            <Modal ref={modalRef}>
+                <ProjectModal />
+            </Modal>
         </div>
     )
 }
